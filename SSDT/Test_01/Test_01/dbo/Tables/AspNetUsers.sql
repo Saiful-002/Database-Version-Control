@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[AspNetUsers] (
-    [Id]                   NVARCHAR (250)     NOT NULL,
+    [Id]                   NVARCHAR (350)     NOT NULL,
     [Name]                 NVARCHAR (MAX)     NULL,
     [Password]             NVARCHAR (MAX)     NULL,
     [IsActive]             BIT                NULL,
