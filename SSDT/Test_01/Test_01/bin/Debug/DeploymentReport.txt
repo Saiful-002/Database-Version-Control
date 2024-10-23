@@ -1,0 +1,62 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [dbo].[AspNetUserRoles]
+       [dbo].[AspNetUsers]
+       [dbo].[AspNetUserTokens]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column UserId in table [dbo].[AspNetUserClaims] is currently  NVARCHAR (450) NOT NULL but is being changed
+         to  NVARCHAR (250) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is
+         incompatible with type  NVARCHAR (250) NOT NULL.
+       The type for column UserId in table [dbo].[AspNetUserLogins] is currently  NVARCHAR (450) NOT NULL but is being changed
+         to  NVARCHAR (250) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is
+         incompatible with type  NVARCHAR (250) NOT NULL.
+       The type for column UserId in table [dbo].[AspNetUserRoles] is currently  NVARCHAR (450) NOT NULL but is being changed
+         to  NVARCHAR (250) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is
+         incompatible with type  NVARCHAR (250) NOT NULL.
+       The type for column Id in table [dbo].[AspNetUsers] is currently  NVARCHAR (450) NOT NULL but is being changed to 
+         NVARCHAR (250) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible
+         with type  NVARCHAR (250) NOT NULL.
+       The type for column UserId in table [dbo].[AspNetUserTokens] is currently  NVARCHAR (450) NOT NULL but is being changed
+         to  NVARCHAR (250) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is
+         incompatible with type  NVARCHAR (250) NOT NULL.
+
+** User actions
+     Alter
+       [dbo].[AspNetUserClaims] (Table)
+       [dbo].[AspNetUserLogins] (Table)
+     Recreate table
+       [dbo].[AspNetUserRoles] (Table)
+       [dbo].[AspNetUsers] (Table)
+       [dbo].[AspNetUserTokens] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[AspNetUserClaims].[IX_AspNetUserClaims_UserId] (Index)
+       [dbo].[AspNetUserLogins].[IX_AspNetUserLogins_UserId] (Index)
+       [dbo].[FK_AspNetUserClaims_AspNetUsers_UserId] (Foreign Key)
+       [dbo].[FK_AspNetUserLogins_AspNetUsers_UserId] (Foreign Key)
+       [dbo].[FK_AspNetUserRoles_AspNetUsers_UserId] (Foreign Key)
+       [dbo].[FK_AspNetUserRoles_AspNetRoles_RoleId] (Foreign Key)
+       [dbo].[FK_AspNetUserTokens_AspNetUsers_UserId] (Foreign Key)
+     Create
+       [dbo].[AspNetUserClaims].[IX_AspNetUserClaims_UserId] (Index)
+       [dbo].[AspNetUserLogins].[IX_AspNetUserLogins_UserId] (Index)
+       [dbo].[AspNetUserRoles].[IX_AspNetUserRoles_RoleId] (Index)
+       [dbo].[AspNetUsers].[EmailIndex] (Index)
+       [dbo].[AspNetUsers].[UserNameIndex] (Index)
+       [dbo].[FK_AspNetUserClaims_AspNetUsers_UserId] (Foreign Key)
+       [dbo].[FK_AspNetUserLogins_AspNetUsers_UserId] (Foreign Key)
+       [dbo].[FK_AspNetUserRoles_AspNetUsers_UserId] (Foreign Key)
+       [dbo].[FK_AspNetUserRoles_AspNetRoles_RoleId] (Foreign Key)
+       [dbo].[FK_AspNetUserTokens_AspNetUsers_UserId] (Foreign Key)
+
+The type for column UserId in table [dbo].[AspNetUserClaims] is currently  NVARCHAR (450) NOT NULL but is being changed to  NVARCHAR (250) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  NVARCHAR (250) NOT NULL.
+The type for column UserId in table [dbo].[AspNetUserLogins] is currently  NVARCHAR (450) NOT NULL but is being changed to  NVARCHAR (250) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  NVARCHAR (250) NOT NULL.
+The type for column UserId in table [dbo].[AspNetUserRoles] is currently  NVARCHAR (450) NOT NULL but is being changed to  NVARCHAR (250) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  NVARCHAR (250) NOT NULL.
+The type for column Id in table [dbo].[AspNetUsers] is currently  NVARCHAR (450) NOT NULL but is being changed to  NVARCHAR (250) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  NVARCHAR (250) NOT NULL.
+The type for column UserId in table [dbo].[AspNetUserTokens] is currently  NVARCHAR (450) NOT NULL but is being changed to  NVARCHAR (250) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  NVARCHAR (250) NOT NULL.
+
