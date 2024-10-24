@@ -1,0 +1,6 @@
+C:\Users\BS664\Desktop\Database-Version-Control\SSDT\Test_02\Test_02\bin\Debug\Test_02.dacpac
+C:\Users\BS664\Desktop\Database-Version-Control\SSDT\Test_02\Test_02\bin\Debug\Test_02.dll
+C:\Users\BS664\Desktop\Database-Version-Control\SSDT\Test_02\Test_02\bin\Debug\Test_02.pdb
+C:\Users\BS664\Desktop\Database-Version-Control\SSDT\Test_02\Test_02\obj\Debug\Test_02.sqlproj.AssemblyReference.cache
+C:\Users\BS664\Desktop\Database-Version-Control\SSDT\Test_02\Test_02\obj\Debug\Test_02.dll
+C:\Users\BS664\Desktop\Database-Version-Control\SSDT\Test_02\Test_02\obj\Debug\Test_02.pdb

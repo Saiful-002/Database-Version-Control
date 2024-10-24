@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Test_02</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{b54a615b-a9d5-47f6-bfb9-e88ecc1aa172}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Test_02</RootNamespace>
+    <AssemblyName>Test_02</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Storage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\AspNetUserTokens.sql" />
+    <Build Include="dbo\Tables\AppUsers.sql" />
+    <Build Include="dbo\Tables\Users1.sql" />
+    <Build Include="dbo\Tables\TransactionMasters.sql" />
+    <Build Include="dbo\Tables\Districts.sql" />
+    <Build Include="dbo\Tables\Upazilas.sql" />
+    <Build Include="dbo\Tables\CommonDatas.sql" />
+    <Build Include="dbo\Tables\Currencies.sql" />
+    <Build Include="dbo\Tables\Projects.sql" />
+    <Build Include="dbo\Tables\__EFMigrationsHistory.sql" />
+    <Build Include="dbo\Tables\Beneficiaries.sql" />
+    <Build Include="dbo\Tables\AppUsersExp.sql" />
+    <Build Include="dbo\Tables\Programs.sql" />
+    <Build Include="dbo\Tables\Raihan.sql" />
+    <Build Include="dbo\Tables\Raihan_02.sql" />
+    <Build Include="dbo\Tables\Donors.sql" />
+    <Build Include="dbo\Tables\AllocationPeriods.sql" />
+    <Build Include="dbo\Tables\DonationAllocationDetails.sql" />
+    <Build Include="dbo\Tables\DonationAllocations.sql" />
+    <Build Include="dbo\Tables\Ledgers.sql" />
+    <Build Include="dbo\Tables\PaymentTypes.sql" />
+    <Build Include="dbo\Tables\AspNetRoles.sql" />
+    <Build Include="dbo\Tables\ProjectDetails.sql" />
+    <Build Include="dbo\Tables\AspNetUsers.sql" />
+    <Build Include="dbo\Tables\AspNetRoleClaims.sql" />
+    <Build Include="dbo\Tables\StipendDetails.sql" />
+    <Build Include="dbo\Tables\AspNetUserClaims.sql" />
+    <Build Include="dbo\Tables\TransactionDetails.sql" />
+    <Build Include="dbo\Tables\AspNetUserLogins.sql" />
+    <Build Include="dbo\Tables\AspNetUserRoles.sql" />
+    <Build Include="Storage\PF_CommonDatas_ByYear.sql" />
+    <Build Include="dbo\Tables\Test_001.sql" />
+  </ItemGroup>
+</Project>
