@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[AppUsersTemp] (
     [Id]             UNIQUEIDENTIFIER NOT NULL,
-    [Name]           NVARCHAR (MAX)   NULL,
+    [Name]           NVARCHAR (100)   NULL, -- ticket#402
     [UserName]       NVARCHAR (MAX)   NULL,
     [Password]       NVARCHAR (MAX)   NULL,
     [EmailAddress]   NVARCHAR (MAX)   NULL,
